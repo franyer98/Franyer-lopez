@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+      
+      <link rel="icon" type="image/png" sizes="32x32" href="./img/desarrollo-web.png">
+
+
+    <title>Portafolio personal</title>
+  </head>
+
+  <body>
+    <header>
+
+      <h3>Portafolio Personal</h3>
+
+      <!--menu-->
+      <div class="contenedor">
+
+        <input type="checkbox" id="menu-bar" />
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="#banner">Inicio</a>
+          <a href="#acerca">Acerca de mi</a>
+          <a href="#proyectos">Mis proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="banner">
+        <a
+          href=""
+          class="typewrite"
+          data-period="2000"
+          data-type='[ "Hola! Soy Franyer Lopez.", "Soy Ingeniero de sistemas.",
+             "Soy Desarrollador Front-end.", "Bienvenido a mi Portafolio." ]'
+        >
+          <span class="wrap"></span>
+        </a>
+        <button class="contacto">contacto</button>
+      </section>
+
+      <section id="acerca">
+        <h2>ACERCA DE MI</h2>
+        <div class="imagen">
+          <img src="./img/fotoperfil.jpeg" alt="" />
+        </div>
+        <div class="texto">
+          <p>
+            Hola! soy franyer lopez, ingeniero de sistemas, Integro,
+            autogestionado, con alta capacidad de autoaprendizaje y liderazgo,
+            con intereses en practicas de calidad, diseño y arquitectura
+            software. <br />
+            apasionado por la tecnologia y en el diseño Front-end de paginas
+            web, tengo conocimientos solidos en diseño de interfaces, hago uso
+            eficiente de herramientas de desarrollo para obtener la solucion
+            requerida por la empresa.
+          </p>
+        </div>
+        <h2>MIS HABILIDADES</h2>
+
+        <section class="grid">
+          <div class="card-h">
+            <img src="./img/html-5.png" />
+          </div>
+          <div class="card-h">
+            <img src="./img/css-3.png" />
+          </div>
+          <div class="card-h">
+            <img src="./img/javas.png" />
+          </div>
+          <div class="card-h">
+            <img src="./img/mysql.png" />
+          </div>
+          <div class="card-h">
+            <img src="./img/boostrap.jpg" />
+          </div>
+          <div class="card-h">
+            <img src="./img/git.png" />
+          </div>
+        </section>
+      </section>
+
+      <!--proyectos-->
+      <div class="proyectos">
+        <h2 id="proyectos">PROYECTOS</h2>
+        <div class="contenido">
+          <div class="card">
+            <img src="./img/1ra.jpeg" alt="" />
+            <h4>Blog de mascotas</h4>
+            <p>
+              Aquí podrás encontrar curiosidades, vídeos, consejos y muchas
+              cosas importantes si tienes una mascota.
+
+            </p>
+            <a href="https://franyer98.github.io/mascotas/">Abrir</a>
+          </div>
+
+          <div class="card">
+            <img src="./img/0001.jpg" alt="" />
+            <h4>Conjunto zainos</h4>
+            <p>
+              En esta pagina encontraras informacion importante sobre el conjunto residencial zainos,
+               formatos, ubicacion. 
+            </p>
+            <a href="https://brave-kare-96b9fb.netlify.app/">Abrir</a>
+          </div>
+
+          <div class="card">
+            <img src="./img/cortadorurl.jpg" alt="" />
+            <h4>Acortador de url</h4>
+            <p>
+              Con esta herramienta reduces el tamaño de un enlace de una 
+              web que es muy largo, covirtiendolo en 8 palabras.
+            </p>
+            <a
+              href="https://franyer98.github.io/Franyer_Lopez_Pueba_frontendv2/"
+              >Abrir</a >
+          </div>
+
+          <div class="card">
+            <img src="./img/crud.png" alt="" />
+            <h4>Crud con Javascript</h4>
+            <p>Crud realizado con Javascript para guardar,editar,borrar informacion.
+              
+            </p>
+            <a
+              href="https://franyer98.github.io/Crud-javascript/"
+              >Abrir</a >
+          </div>
+
+          <div class="card">
+            <img src="./img/ramdom.JPG" alt="" />
+            <h4>Usuarios Random</h4>
+            <p>Este sitio muestra informacion random de muchos perfiles con su informacion personal.
+              
+            </p>
+            <a
+              href="https://franyer98.github.io/Usuario-random/"
+              >Abrir</a >
+          </div>
+          <div class="card">
+            <img src="./img/random.JPG" alt="" />
+            <h4>Adivina la palabra</h4>
+            <p> Este juego consiste en adivinar las palabras que nos muestran de forma desordenada.
+            </p>
+            <a
+              href="https://franyer98.github.io/Adivina-la-palabra-oculta/"
+              >Abrir</a >
+          </div>
+        </div>
+      </div>
+     
+      <form  id="contacto" ction="https://formsubmit.co/franyer.260814@gmail.com" method="POST">
+        <h2 >CONTACTO</h2>
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="correo" name="correo" placeholder="Correo" required />
+        <input type="telefono" name="telefono" placeholder="Telefono" required />
+        <textarea name="mensaje" placeholder="mensaje" required></textarea>
+        <input type="submit" value="ENVIAR" id="boton" />
+       </form>
+      <footer>
+        <div class="footer">
+         
+          <div class="sociales">
+            <a
+              class="icon-facebook-official"
+              href="https://www.facebook.com/franyeralberto.lopezdiaz1"
+            ></a>
+            <a class="icon-whatsapp" href="https://wa.link/vyyddx"></a>
+            <a
+              class="icon-linkedin-squared"
+              href="http://www.linkedin.com/in/franyerlopez"
+            ></a>
+          </div>
+          <p class="copy">Franyer Lopez &copy; 2022</p>
+        </div>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+</html>
