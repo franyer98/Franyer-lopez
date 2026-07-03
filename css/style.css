@@ -281,6 +281,7 @@ section h2 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center 12%;
   border-radius: 50%;
   border: 3px solid transparent;
   background: var(--gradient);
