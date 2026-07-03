@@ -19,6 +19,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/desarrollo-web.png" />
 
     <title>Franyer López · Ingeniero de Sistemas · IA</title>
+    <script>
+      (function () {
+        // Aplica tema guardado antes de pintar, para evitar parpadeo.
+        var saved = null;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
   </head>
 
   <body>
@@ -26,39 +35,52 @@
       <div class="contenedor">
         <a href="#banner" class="logo">Franyer<span>López</span></a>
 
-        <input type="checkbox" id="menu-bar" />
-        <label class="icon-menu" for="menu-bar"></label>
-        <nav class="menu">
-          <a href="#banner">Inicio</a>
-          <a href="#acerca">Sobre mí</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#github-activity">GitHub</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="nav-right">
+          <div class="header-controls">
+            <button id="theme-toggle" class="icon-btn" type="button" aria-label="Cambiar tema">
+              <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+            </button>
+            <button id="lang-toggle" class="icon-btn lang-btn" type="button" aria-label="Switch language">
+              <span id="lang-toggle-label">EN</span>
+            </button>
+          </div>
+
+          <input type="checkbox" id="menu-bar" />
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a href="#banner" data-i18n="nav.home">Inicio</a>
+            <a href="#acerca" data-i18n="nav.about">Sobre mí</a>
+            <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+            <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+            <a href="#github-activity">GitHub</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
       <section id="banner">
         <div class="hero-bg" aria-hidden="true"></div>
-        <p class="eyebrow">Ingeniero de Sistemas · Especialista en Inteligencia Artificial</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Ingeniero de Sistemas · Especialista en Inteligencia Artificial</p>
         <h1>Franyer López</h1>
         <a
           href=""
           class="typewrite"
           data-period="2200"
-          data-type='[ "Diseño soluciones inteligentes con datos.", "Automatización + Machine Learning.", "Transformo datos en decisiones.", "Bienvenido a mi portafolio." ]'
+          data-type-es='[ "Diseño soluciones inteligentes con datos.", "Automatización + Machine Learning.", "Transformo datos en decisiones.", "Bienvenido a mi portafolio." ]'
+          data-type-en='[ "I design intelligent, data-driven solutions.", "Automation + Machine Learning.", "I turn data into decisions.", "Welcome to my portfolio." ]'
         >
           <span class="wrap"></span>
         </a>
-        <p class="banner-desc">
+        <p class="banner-desc" data-i18n="hero.desc">
           Combino ingeniería de sistemas e inteligencia artificial para construir
           soluciones que automatizan procesos, analizan datos y generan valor real.
         </p>
         <div class="banner-cta">
-          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
+          <a href="#proyectos" class="btn btn-primary" data-i18n="hero.btnProjects">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline" data-i18n="hero.btnContact">Contactar</a>
         </div>
         <div class="sociales sociales-banner">
           <a
@@ -103,68 +125,68 @@
       </section>
 
       <section id="acerca">
-        <h2 class="reveal">SOBRE MÍ</h2>
+        <h2 class="reveal" data-i18n="about.title">SOBRE MÍ</h2>
         <div class="acerca-grid">
           <div class="imagen reveal">
             <img src="./img/foto.jpeg" alt="Foto de Franyer López" />
           </div>
           <div class="texto reveal">
-            <p>
+            <p data-i18n-html="about.p1">
               Soy Franyer López, Ingeniero de Sistemas enfocado en
               <strong>Inteligencia Artificial</strong> y automatización de procesos.
               Me apasiona explorar cómo el aprendizaje automático y el análisis de
               datos pueden resolver problemas reales, y disfruto llevar cada proyecto
               desde la idea hasta un sistema funcionando de punta a punta.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               Soy autodidacta, resolutivo y estoy en constante aprendizaje de nuevas
               tecnologías — creo en escribir soluciones simples, mantenibles y que
               realmente resuelvan el problema.
             </p>
             <div class="chips">
-              <span class="chip">Enfoque: IA &amp; automatización de datos</span>
-              <span class="chip">Stack principal: Python</span>
-              <span class="chip">Aprendizaje continuo</span>
+              <span class="chip" data-i18n="about.chip1">Enfoque: IA &amp; automatización de datos</span>
+              <span class="chip" data-i18n="about.chip2">Stack principal: Python</span>
+              <span class="chip" data-i18n="about.chip3">Aprendizaje continuo</span>
             </div>
           </div>
         </div>
       </section>
 
       <section id="habilidades">
-        <h2 class="reveal">HABILIDADES</h2>
+        <h2 class="reveal" data-i18n="skills.title">HABILIDADES</h2>
 
         <div class="skills-grupo reveal">
-          <h3>Inteligencia Artificial &amp; Datos</h3>
+          <h3 data-i18n="skills.group1">Inteligencia Artificial &amp; Datos</h3>
           <div class="skills-tags">
             <span>Python</span>
             <span>Machine Learning</span>
             <span>Deep Learning</span>
-            <span>Análisis de datos</span>
+            <span data-i18n="skills.tag.dataAnalysis">Análisis de datos</span>
             <span>Pandas</span>
           </div>
         </div>
 
         <div class="skills-grupo reveal">
-          <h3>Automatización &amp; Backend</h3>
+          <h3 data-i18n="skills.group2">Automatización &amp; Backend</h3>
           <div class="skills-tags">
             <span>APIs REST</span>
-            <span>Automatización de procesos</span>
+            <span data-i18n="skills.tag.processAutomation">Automatización de procesos</span>
             <span>Scripting (Bash)</span>
           </div>
         </div>
 
         <div class="skills-grupo reveal">
-          <h3>Herramientas &amp; Infraestructura</h3>
+          <h3 data-i18n="skills.group3">Herramientas &amp; Infraestructura</h3>
           <div class="skills-tags">
             <span>Git &amp; GitHub</span>
             <span>GitHub Actions (CI/CD)</span>
             <span>SQL / MySQL</span>
-            <span>Fundamentos de Cloud</span>
+            <span data-i18n="skills.tag.cloudFundamentals">Fundamentos de Cloud</span>
           </div>
         </div>
 
         <div class="skills-grupo reveal">
-          <h3>Desarrollo Web</h3>
+          <h3 data-i18n="skills.group4">Desarrollo Web</h3>
           <div class="skills-tags">
             <span>HTML5</span>
             <span>CSS3</span>
@@ -176,16 +198,16 @@
 
       <!--proyectos-->
       <div class="proyectos">
-        <h2 id="proyectos" class="reveal">PROYECTOS</h2>
+        <h2 id="proyectos" class="reveal" data-i18n="projects.title">PROYECTOS</h2>
         <div class="contenido">
           <article class="card card-destacada reveal">
             <div class="card-body">
-              <span class="badge">Proyecto destacado</span>
+              <span class="badge" data-i18n="projects.featuredBadge">Proyecto destacado</span>
               <h4>Google Form Reporter</h4>
               <p class="card-tags">
                 Python · pandas · Google Sheets API · GitHub Actions · Automatización
               </p>
-              <p>
+              <p data-i18n="projects.p1desc">
                 Sistema de generación automática de reportes: extrae respuestas de un
                 Google Form, procesa los datos con pandas y publica un dashboard en
                 vivo, además de reportes en Excel y PDF — 100% automatizado con
@@ -196,6 +218,7 @@
                   href="https://github.com/franyer98/google-form-reporter"
                   target="_blank"
                   rel="noopener"
+                  data-i18n="projects.viewCode"
                   >Ver código</a
                 >
                 <a
@@ -203,6 +226,7 @@
                   target="_blank"
                   rel="noopener"
                   class="secundario"
+                  data-i18n="projects.liveDemo"
                   >Ver demo en vivo</a
                 >
               </div>
@@ -211,9 +235,9 @@
 
           <article class="card card-proximo reveal">
             <div class="card-body">
-              <span class="badge badge-outline">En construcción</span>
-              <h4>Próximo proyecto</h4>
-              <p>
+              <span class="badge badge-outline" data-i18n="projects.inProgressBadge">En construcción</span>
+              <h4 data-i18n="projects.nextTitle">Próximo proyecto</h4>
+              <p data-i18n="projects.nextDesc">
                 Estoy trabajando en un nuevo proyecto de Machine Learning. Vuelve
                 pronto para verlo.
               </p>
@@ -223,20 +247,20 @@
       </div>
 
       <section id="github-activity">
-        <h2 class="reveal">ACTIVIDAD EN GITHUB</h2>
-        <p class="github-sub reveal">Repositorios actualizados recientemente — datos en vivo desde mi perfil.</p>
+        <h2 class="reveal" data-i18n="github.title">ACTIVIDAD EN GITHUB</h2>
+        <p class="github-sub reveal" data-i18n="github.subtitle">Repositorios actualizados recientemente — datos en vivo desde mi perfil.</p>
         <div id="github-repos" class="github-repos reveal">
-          <p class="github-status">Cargando actividad de GitHub…</p>
+          <p class="github-status" data-i18n="github.loading">Cargando actividad de GitHub…</p>
         </div>
       </section>
 
       <form id="contacto" class="reveal" action="https://formsubmit.co/franyer.260814@gmail.com" method="POST">
-        <h2>CONTACTO</h2>
-        <input type="text" name="nombre" placeholder="Nombre" required />
-        <input type="email" name="correo" placeholder="Correo" required />
-        <input type="tel" name="telefono" placeholder="Teléfono" required />
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-        <input type="submit" value="ENVIAR" id="boton" />
+        <h2 data-i18n="contact.title">CONTACTO</h2>
+        <input type="text" name="nombre" placeholder="Nombre" data-i18n-placeholder="contact.namePlaceholder" required />
+        <input type="email" name="correo" placeholder="Correo" data-i18n-placeholder="contact.emailPlaceholder" required />
+        <input type="tel" name="telefono" placeholder="Teléfono" data-i18n-placeholder="contact.phonePlaceholder" required />
+        <textarea name="mensaje" placeholder="Mensaje" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
+        <input type="submit" value="ENVIAR" id="boton" data-i18n-value="contact.submit" />
       </form>
 
       <footer>
