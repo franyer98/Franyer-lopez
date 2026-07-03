@@ -133,10 +133,30 @@ header label.icon-menu {
 
 /* ===== banner ===== */
 #banner {
+  position: relative;
   max-width: 760px;
   margin: 0 auto;
   padding: 190px 24px 90px;
   text-align: center;
+  overflow: clip;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -20% -30%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 20% 25%, rgba(108, 140, 255, 0.35), transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.3), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(34, 211, 238, 0.22), transparent 40%);
+  filter: blur(40px);
+  background-size: 200% 200%;
+  animation: heroDrift 18s ease-in-out infinite alternate;
+}
+
+@keyframes heroDrift {
+  0% { background-position: 0% 0%, 100% 0%, 50% 100%; }
+  100% { background-position: 30% 20%, 70% 30%, 40% 70%; }
 }
 
 .eyebrow {
@@ -589,5 +609,142 @@ textarea {
 
   #banner {
     padding-top: 150px;
+  }
+}
+
+/* ===== scroll reveal ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ===== cursor glow (botones y tarjetas) ===== */
+.btn,
+.card {
+  position: relative;
+  isolation: isolate;
+}
+
+.btn::before,
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    280px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(255, 255, 255, 0.16),
+    transparent 70%
+  );
+}
+
+.btn:hover::before,
+.card:hover::before {
+  opacity: 1;
+}
+
+/* ===== actividad en GitHub ===== */
+#github-activity {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+  text-align: center;
+}
+
+.github-sub {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.github-repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  text-align: left;
+}
+
+.github-status {
+  grid-column: 1 / -1;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.github-repo-card {
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.github-repo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.github-repo-name {
+  font-weight: 600;
+  font-family: var(--font-heading);
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+.github-repo-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.github-repo-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.github-repo-lang {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ===== accesibilidad: menos movimiento ===== */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .btn::before,
+  .card::before {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }

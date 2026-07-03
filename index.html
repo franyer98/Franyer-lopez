@@ -33,6 +33,7 @@
           <a href="#acerca">Sobre mí</a>
           <a href="#habilidades">Habilidades</a>
           <a href="#proyectos">Proyectos</a>
+          <a href="#github-activity">GitHub</a>
           <a href="#contacto">Contacto</a>
         </nav>
       </div>
@@ -40,6 +41,7 @@
 
     <main>
       <section id="banner">
+        <div class="hero-bg" aria-hidden="true"></div>
         <p class="eyebrow">Ingeniero de Sistemas · Especialista en Inteligencia Artificial</p>
         <h1>Franyer López</h1>
         <a
@@ -101,12 +103,12 @@
       </section>
 
       <section id="acerca">
-        <h2>SOBRE MÍ</h2>
+        <h2 class="reveal">SOBRE MÍ</h2>
         <div class="acerca-grid">
-          <div class="imagen">
+          <div class="imagen reveal">
             <img src="./img/foto.jpeg" alt="Foto de Franyer López" />
           </div>
-          <div class="texto">
+          <div class="texto reveal">
             <p>
               Soy Franyer López, Ingeniero de Sistemas enfocado en
               <strong>Inteligencia Artificial</strong> y automatización de procesos.
@@ -129,9 +131,9 @@
       </section>
 
       <section id="habilidades">
-        <h2>HABILIDADES</h2>
+        <h2 class="reveal">HABILIDADES</h2>
 
-        <div class="skills-grupo">
+        <div class="skills-grupo reveal">
           <h3>Inteligencia Artificial &amp; Datos</h3>
           <div class="skills-tags">
             <span>Python</span>
@@ -142,7 +144,7 @@
           </div>
         </div>
 
-        <div class="skills-grupo">
+        <div class="skills-grupo reveal">
           <h3>Automatización &amp; Backend</h3>
           <div class="skills-tags">
             <span>APIs REST</span>
@@ -151,7 +153,7 @@
           </div>
         </div>
 
-        <div class="skills-grupo">
+        <div class="skills-grupo reveal">
           <h3>Herramientas &amp; Infraestructura</h3>
           <div class="skills-tags">
             <span>Git &amp; GitHub</span>
@@ -161,7 +163,7 @@
           </div>
         </div>
 
-        <div class="skills-grupo">
+        <div class="skills-grupo reveal">
           <h3>Desarrollo Web</h3>
           <div class="skills-tags">
             <span>HTML5</span>
@@ -174,9 +176,9 @@
 
       <!--proyectos-->
       <div class="proyectos">
-        <h2 id="proyectos">PROYECTOS</h2>
+        <h2 id="proyectos" class="reveal">PROYECTOS</h2>
         <div class="contenido">
-          <article class="card card-destacada">
+          <article class="card card-destacada reveal">
             <div class="card-body">
               <span class="badge">Proyecto destacado</span>
               <h4>Google Form Reporter</h4>
@@ -207,7 +209,7 @@
             </div>
           </article>
 
-          <article class="card card-proximo">
+          <article class="card card-proximo reveal">
             <div class="card-body">
               <span class="badge badge-outline">En construcción</span>
               <h4>Próximo proyecto</h4>
@@ -220,7 +222,15 @@
         </div>
       </div>
 
-      <form id="contacto" action="https://formsubmit.co/franyer.260814@gmail.com" method="POST">
+      <section id="github-activity">
+        <h2 class="reveal">ACTIVIDAD EN GITHUB</h2>
+        <p class="github-sub reveal">Repositorios actualizados recientemente — datos en vivo desde mi perfil.</p>
+        <div id="github-repos" class="github-repos reveal">
+          <p class="github-status">Cargando actividad de GitHub…</p>
+        </div>
+      </section>
+
+      <form id="contacto" class="reveal" action="https://formsubmit.co/franyer.260814@gmail.com" method="POST">
         <h2>CONTACTO</h2>
         <input type="text" name="nombre" placeholder="Nombre" required />
         <input type="email" name="correo" placeholder="Correo" required />
