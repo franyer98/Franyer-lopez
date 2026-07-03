@@ -1,190 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Franyer López — Ingeniero de Sistemas especializado en Inteligencia Artificial. Portafolio de proyectos de automatización, datos y machine learning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/fontello.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-      
-      <link rel="icon" type="image/png" sizes="32x32" href="./img/desarrollo-web.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/desarrollo-web.png" />
 
-
-    <title>Portafolio personal</title>
+    <title>Franyer López · Ingeniero de Sistemas · IA</title>
   </head>
 
   <body>
     <header>
-
-      <h3>Portafolio Personal</h3>
-
-      <!--menu-->
       <div class="contenedor">
+        <a href="#banner" class="logo">Franyer<span>López</span></a>
 
         <input type="checkbox" id="menu-bar" />
         <label class="icon-menu" for="menu-bar"></label>
         <nav class="menu">
           <a href="#banner">Inicio</a>
-          <a href="#acerca">Acerca de mi</a>
-          <a href="#proyectos">Mis proyectos</a>
+          <a href="#acerca">Sobre mí</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#proyectos">Proyectos</a>
           <a href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
+
     <main>
       <section id="banner">
+        <p class="eyebrow">Ingeniero de Sistemas · Especialista en Inteligencia Artificial</p>
+        <h1>Franyer López</h1>
         <a
           href=""
           class="typewrite"
-          data-period="2000"
-          data-type='[ "Hola! Soy Franyer Lopez.", "Soy Ingeniero de sistemas.",
-             "Soy Desarrollador Front-end.", "Bienvenido a mi Portafolio." ]'
+          data-period="2200"
+          data-type='[ "Diseño soluciones inteligentes con datos.", "Automatización + Machine Learning.", "Transformo datos en decisiones.", "Bienvenido a mi portafolio." ]'
         >
           <span class="wrap"></span>
         </a>
-        <button class="contacto">contacto</button>
+        <p class="banner-desc">
+          Combino ingeniería de sistemas e inteligencia artificial para construir
+          soluciones que automatizan procesos, analizan datos y generan valor real.
+        </p>
+        <div class="banner-cta">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+        <div class="sociales sociales-banner">
+          <a
+            class="icon-facebook-official"
+            href="https://www.facebook.com/franyeralberto.lopezdiaz1"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener"
+          ></a>
+          <a
+            class="icon-whatsapp"
+            href="https://wa.link/vyyddx"
+            aria-label="WhatsApp"
+            target="_blank"
+            rel="noopener"
+          ></a>
+          <a
+            class="icon-linkedin-squared"
+            href="http://www.linkedin.com/in/franyerlopez"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          ></a>
+          <a
+            class="github-link"
+            href="https://github.com/franyer98"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58
+                1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27
+                2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01
+                2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section id="acerca">
-        <h2>ACERCA DE MI</h2>
-        <div class="imagen">
-          <img src="./img/fotoperfil.jpeg" alt="" />
+        <h2>SOBRE MÍ</h2>
+        <div class="acerca-grid">
+          <div class="imagen">
+            <img src="./img/fotoperfil.jpeg" alt="Foto de Franyer López" />
+          </div>
+          <div class="texto">
+            <p>
+              Soy Franyer López, Ingeniero de Sistemas enfocado en
+              <strong>Inteligencia Artificial</strong> y automatización de procesos.
+              Me apasiona explorar cómo el aprendizaje automático y el análisis de
+              datos pueden resolver problemas reales, y disfruto llevar cada proyecto
+              desde la idea hasta un sistema funcionando de punta a punta.
+            </p>
+            <p>
+              Soy autodidacta, resolutivo y estoy en constante aprendizaje de nuevas
+              tecnologías — creo en escribir soluciones simples, mantenibles y que
+              realmente resuelvan el problema.
+            </p>
+            <div class="chips">
+              <span class="chip">Enfoque: IA &amp; automatización de datos</span>
+              <span class="chip">Stack principal: Python</span>
+              <span class="chip">Aprendizaje continuo</span>
+            </div>
+          </div>
         </div>
-        <div class="texto">
-          <p>
-            Hola! soy franyer lopez, ingeniero de sistemas, Integro,
-            autogestionado, con alta capacidad de autoaprendizaje y liderazgo,
-            con intereses en practicas de calidad, diseño y arquitectura
-            software. <br />
-            apasionado por la tecnologia y en el diseño Front-end de paginas
-            web, tengo conocimientos solidos en diseño de interfaces, hago uso
-            eficiente de herramientas de desarrollo para obtener la solucion
-            requerida por la empresa.
-          </p>
-        </div>
-        <h2>MIS HABILIDADES</h2>
+      </section>
 
-        <section class="grid">
-          <div class="card-h">
-            <img src="./img/html-5.png" />
+      <section id="habilidades">
+        <h2>HABILIDADES</h2>
+
+        <div class="skills-grupo">
+          <h3>Inteligencia Artificial &amp; Datos</h3>
+          <div class="skills-tags">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Análisis de datos</span>
+            <span>Pandas</span>
           </div>
-          <div class="card-h">
-            <img src="./img/css-3.png" />
+        </div>
+
+        <div class="skills-grupo">
+          <h3>Automatización &amp; Backend</h3>
+          <div class="skills-tags">
+            <span>APIs REST</span>
+            <span>Automatización de procesos</span>
+            <span>Scripting (Bash)</span>
           </div>
-          <div class="card-h">
-            <img src="./img/javas.png" />
+        </div>
+
+        <div class="skills-grupo">
+          <h3>Herramientas &amp; Infraestructura</h3>
+          <div class="skills-tags">
+            <span>Git &amp; GitHub</span>
+            <span>GitHub Actions (CI/CD)</span>
+            <span>SQL / MySQL</span>
+            <span>Fundamentos de Cloud</span>
           </div>
-          <div class="card-h">
-            <img src="./img/mysql.png" />
+        </div>
+
+        <div class="skills-grupo">
+          <h3>Desarrollo Web</h3>
+          <div class="skills-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
           </div>
-          <div class="card-h">
-            <img src="./img/boostrap.jpg" />
-          </div>
-          <div class="card-h">
-            <img src="./img/git.png" />
-          </div>
-        </section>
+        </div>
       </section>
 
       <!--proyectos-->
       <div class="proyectos">
         <h2 id="proyectos">PROYECTOS</h2>
         <div class="contenido">
-          <div class="card">
-            <img src="./img/1ra.jpeg" alt="" />
-            <h4>Blog de mascotas</h4>
-            <p>
-              Aquí podrás encontrar curiosidades, vídeos, consejos y muchas
-              cosas importantes si tienes una mascota.
+          <article class="card card-destacada">
+            <div class="card-body">
+              <span class="badge">Proyecto destacado</span>
+              <h4>Google Form Reporter</h4>
+              <p class="card-tags">
+                Python · pandas · Google Sheets API · GitHub Actions · Automatización
+              </p>
+              <p>
+                Sistema de generación automática de reportes: extrae respuestas de un
+                Google Form, procesa los datos con pandas y publica un dashboard en
+                vivo, además de reportes en Excel y PDF — 100% automatizado con
+                GitHub Actions, sin intervención manual.
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://github.com/franyer98/google-form-reporter"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver código</a
+                >
+                <a
+                  href="https://franyer98.github.io/google-form-reporter/"
+                  target="_blank"
+                  rel="noopener"
+                  class="secundario"
+                  >Ver demo en vivo</a
+                >
+              </div>
+            </div>
+          </article>
 
-            </p>
-            <a href="https://franyer98.github.io/mascotas/">Abrir</a>
-          </div>
-
-          <div class="card">
-            <img src="./img/0001.jpg" alt="" />
-            <h4>Conjunto zainos</h4>
-            <p>
-              En esta pagina encontraras informacion importante sobre el conjunto residencial zainos,
-               formatos, ubicacion. 
-            </p>
-            <a href="https://brave-kare-96b9fb.netlify.app/">Abrir</a>
-          </div>
-
-          <div class="card">
-            <img src="./img/cortadorurl.jpg" alt="" />
-            <h4>Acortador de url</h4>
-            <p>
-              Con esta herramienta reduces el tamaño de un enlace de una 
-              web que es muy largo, covirtiendolo en 8 palabras.
-            </p>
-            <a
-              href="https://franyer98.github.io/Franyer_Lopez_Pueba_frontendv2/"
-              >Abrir</a >
-          </div>
-
-          <div class="card">
-            <img src="./img/crud.png" alt="" />
-            <h4>Crud con Javascript</h4>
-            <p>Crud realizado con Javascript para guardar,editar,borrar informacion.
-              
-            </p>
-            <a
-              href="https://franyer98.github.io/Crud-javascript/"
-              >Abrir</a >
-          </div>
-
-          <div class="card">
-            <img src="./img/ramdom.JPG" alt="" />
-            <h4>Usuarios Random</h4>
-            <p>Este sitio muestra informacion random de muchos perfiles con su informacion personal.
-              
-            </p>
-            <a
-              href="https://franyer98.github.io/Usuario-random/"
-              >Abrir</a >
-          </div>
-          <div class="card">
-            <img src="./img/random.JPG" alt="" />
-            <h4>Adivina la palabra</h4>
-            <p> Este juego consiste en adivinar las palabras que nos muestran de forma desordenada.
-            </p>
-            <a
-              href="https://franyer98.github.io/Adivina-la-palabra-oculta/"
-              >Abrir</a >
-          </div>
+          <article class="card card-proximo">
+            <div class="card-body">
+              <span class="badge badge-outline">En construcción</span>
+              <h4>Próximo proyecto</h4>
+              <p>
+                Estoy trabajando en un nuevo proyecto de Machine Learning. Vuelve
+                pronto para verlo.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
-     
-      <form  id="contacto" ction="https://formsubmit.co/franyer.260814@gmail.com" method="POST">
-        <h2 >CONTACTO</h2>
+
+      <form id="contacto" action="https://formsubmit.co/franyer.260814@gmail.com" method="POST">
+        <h2>CONTACTO</h2>
         <input type="text" name="nombre" placeholder="Nombre" required />
-        <input type="correo" name="correo" placeholder="Correo" required />
-        <input type="telefono" name="telefono" placeholder="Telefono" required />
-        <textarea name="mensaje" placeholder="mensaje" required></textarea>
+        <input type="email" name="correo" placeholder="Correo" required />
+        <input type="tel" name="telefono" placeholder="Teléfono" required />
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
         <input type="submit" value="ENVIAR" id="boton" />
-       </form>
+      </form>
+
       <footer>
         <div class="footer">
-         
           <div class="sociales">
             <a
               class="icon-facebook-official"
               href="https://www.facebook.com/franyeralberto.lopezdiaz1"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
             ></a>
-            <a class="icon-whatsapp" href="https://wa.link/vyyddx"></a>
+            <a
+              class="icon-whatsapp"
+              href="https://wa.link/vyyddx"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener"
+            ></a>
             <a
               class="icon-linkedin-squared"
               href="http://www.linkedin.com/in/franyerlopez"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
             ></a>
+            <a
+              class="github-link"
+              href="https://github.com/franyer98"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                  0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58
+                  1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                  0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27
+                  2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                  1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01
+                  2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+              </svg>
+            </a>
           </div>
-          <p class="copy">Franyer Lopez &copy; 2022</p>
+          <p class="copy">Franyer López &copy; <span id="anio"></span></p>
         </div>
       </footer>
     </main>
     <script src="index.js"></script>
+  </body>
 </html>
