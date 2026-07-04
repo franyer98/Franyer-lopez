@@ -204,7 +204,7 @@ var TRANSLATIONS = {
     es: {
         'nav.home': 'Inicio', 'nav.about': 'Sobre mí', 'nav.skills': 'Habilidades', 'nav.projects': 'Proyectos', 'nav.contact': 'Contacto',
         'hero.eyebrow': 'Ingeniero de Sistemas · Especialista en Inteligencia Artificial',
-        'hero.desc': 'Combino ingeniería de sistemas e inteligencia artificial para construir soluciones que automatizan procesos, analizan datos y generan valor real.',
+        'hero.desc': 'Fusiono ingeniería de sistemas e inteligencia artificial para llevar soluciones de la idea a producción: pipelines de datos, LLMs y aplicaciones full stack que automatizan procesos y convierten datos en decisiones.',
         'hero.btnProjects': 'Ver proyectos', 'hero.btnContact': 'Contactar',
         'about.title': 'SOBRE MÍ',
         'about.p1': 'Soy Franyer López, Ingeniero de Sistemas especializado en <strong>Inteligencia Artificial</strong> y automatización de procesos. Construyo soluciones de punta a punta: pipelines de datos, modelos de machine learning y LLMs integrados en producción, APIs REST con FastAPI y frontends en React — convirtiendo datos crudos en sistemas que toman decisiones y generan valor real.',
@@ -231,7 +231,7 @@ var TRANSLATIONS = {
     en: {
         'nav.home': 'Home', 'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
         'hero.eyebrow': 'Systems Engineer · AI Specialist',
-        'hero.desc': 'I combine systems engineering and artificial intelligence to build solutions that automate processes, analyze data, and create real value.',
+        'hero.desc': 'I merge systems engineering and artificial intelligence to take solutions from idea to production: data pipelines, LLMs and full-stack applications that automate processes and turn data into decisions.',
         'hero.btnProjects': 'View projects', 'hero.btnContact': 'Contact me',
         'about.title': 'ABOUT ME',
         'about.p1': 'I\'m Franyer López, a Systems Engineer specialized in <strong>Artificial Intelligence</strong> and process automation. I build end-to-end solutions: data pipelines, machine learning models and production-grade LLM integrations, REST APIs with FastAPI and React frontends — turning raw data into systems that make decisions and deliver real value.',
