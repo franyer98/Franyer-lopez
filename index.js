@@ -202,7 +202,7 @@ function loadGithubActivity(lang) {
 /* ===== idioma ES/EN ===== */
 var TRANSLATIONS = {
     es: {
-        'nav.home': 'Inicio', 'nav.about': 'Sobre mí', 'nav.skills': 'Habilidades', 'nav.projects': 'Proyectos', 'nav.contact': 'Contacto',
+        'nav.home': 'Inicio', 'nav.about': 'Sobre mí', 'nav.experience': 'Experiencia', 'nav.skills': 'Habilidades', 'nav.projects': 'Proyectos', 'nav.contact': 'Contacto',
         'hero.eyebrow': 'Ingeniero de Sistemas · Especialista en Inteligencia Artificial',
         'hero.desc': 'Fusiono ingeniería de sistemas e inteligencia artificial para llevar soluciones de la idea a producción: pipelines de datos, LLMs y aplicaciones full stack que automatizan procesos y convierten datos en decisiones.',
         'hero.btnProjects': 'Ver proyectos', 'hero.btnContact': 'Contactar',
@@ -210,6 +210,14 @@ var TRANSLATIONS = {
         'about.p1': 'Soy Franyer López, Ingeniero de Sistemas especializado en <strong>Inteligencia Artificial</strong> y automatización de procesos. Construyo soluciones de punta a punta: pipelines de datos, modelos de machine learning y LLMs integrados en producción, APIs REST con FastAPI y frontends en React — convirtiendo datos crudos en sistemas que toman decisiones y generan valor real.',
         'about.p2': 'Autodidacta y resolutivo, trabajo con prácticas de ingeniería moderna: control de versiones con Git, CI/CD con GitHub Actions, testing automatizado y despliegue en la nube. Mi filosofía: arquitecturas simples, código mantenible y soluciones que atacan el problema de raíz.',
         'about.chip1': 'Enfoque: IA & automatización de datos', 'about.chip2': 'Stack principal: Python', 'about.chip3': 'Aprendizaje continuo',
+        'experience.title': 'EXPERIENCIA',
+        'experience.role': 'Ingeniero de Confiabilidad',
+        'experience.dates': 'Sep. 2022 – Actualidad',
+        'experience.company': 'Mecánicos Asociados (contratista Ecopetrol) · Campo Rubiales, CPF-1 y CPF-2',
+        'experience.item1': 'Ejecuto inspecciones de detección de emisiones fugitivas con cámara termográfica OGI (FLIR) en +200 clusters y las áreas de CPF-1 y CPF-2, con generación de reportes ambientales diarios.',
+        'experience.item2': 'Identifico y hago seguimiento a fugas de gas, contribuyendo directamente a la reducción de emisiones de las facilidades.',
+        'experience.item3': 'Diseñé y desarrollé un dashboard interactivo de seguimiento de inspecciones por cluster, digitalizando un proceso que antes dependía de registro manual en campo.',
+        'experience.item4': 'Construí un sistema de reporte de emisiones con visualización 3D y KPIs, integrado al formato oficial GOP-F-006 de Ecopetrol, mejorando la trazabilidad de los datos de campo.',
         'skills.title': 'HABILIDADES',
         'skills.group1': 'Inteligencia Artificial & Datos', 'skills.group2': 'Automatización & Backend',
         'skills.group3': 'Herramientas & Infraestructura', 'skills.group4': 'Desarrollo Web',
@@ -230,7 +238,7 @@ var TRANSLATIONS = {
         'contact.phonePlaceholder': 'Teléfono', 'contact.messagePlaceholder': 'Mensaje', 'contact.submit': 'ENVIAR'
     },
     en: {
-        'nav.home': 'Home', 'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
+        'nav.home': 'Home', 'nav.about': 'About', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
         'hero.eyebrow': 'Systems Engineer · AI Specialist',
         'hero.desc': 'I merge systems engineering and artificial intelligence to take solutions from idea to production: data pipelines, LLMs and full-stack applications that automate processes and turn data into decisions.',
         'hero.btnProjects': 'View projects', 'hero.btnContact': 'Contact me',
@@ -238,6 +246,14 @@ var TRANSLATIONS = {
         'about.p1': 'I\'m Franyer López, a Systems Engineer specialized in <strong>Artificial Intelligence</strong> and process automation. I build end-to-end solutions: data pipelines, machine learning models and production-grade LLM integrations, REST APIs with FastAPI and React frontends — turning raw data into systems that make decisions and deliver real value.',
         'about.p2': 'Self-taught and results-driven, I work with modern engineering practices: version control with Git, CI/CD with GitHub Actions, automated testing and cloud deployment. My philosophy: simple architectures, maintainable code, and solutions that tackle the root of the problem.',
         'about.chip1': 'Focus: AI & data automation', 'about.chip2': 'Main stack: Python', 'about.chip3': 'Continuous learning',
+        'experience.title': 'EXPERIENCE',
+        'experience.role': 'Reliability Engineer',
+        'experience.dates': 'Sep. 2022 – Present',
+        'experience.company': 'Mecánicos Asociados (Ecopetrol contractor) · Campo Rubiales, CPF-1 and CPF-2',
+        'experience.item1': 'I run fugitive emissions detection inspections with an OGI thermographic camera (FLIR) across 200+ clusters and the CPF-1 and CPF-2 areas, producing daily environmental compliance reports.',
+        'experience.item2': 'I identify and track gas leaks, directly contributing to reducing emissions from the facilities.',
+        'experience.item3': 'I designed and built an interactive dashboard for tracking per-cluster OGI inspections, digitizing a process that previously relied on manual field logging.',
+        'experience.item4': 'I built an emissions reporting system with 3D visualization and KPIs, integrated with Ecopetrol\\'s official GOP-F-006 format, improving field data traceability.',
         'skills.title': 'SKILLS',
         'skills.group1': 'AI & Data', 'skills.group2': 'Automation & Backend',
         'skills.group3': 'Tools & Infrastructure', 'skills.group4': 'Web Development',
