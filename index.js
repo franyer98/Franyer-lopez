@@ -203,8 +203,8 @@ function loadGithubActivity(lang) {
 var TRANSLATIONS = {
     es: {
         'nav.home': 'Inicio', 'nav.about': 'Sobre mí', 'nav.experience': 'Experiencia', 'nav.skills': 'Habilidades', 'nav.projects': 'Proyectos', 'nav.contact': 'Contacto',
-        'hero.eyebrow': 'Ingeniero de Sistemas · Especialista en Inteligencia Artificial',
-        'hero.desc': 'Fusiono ingeniería de sistemas e inteligencia artificial para llevar soluciones de la idea a producción: pipelines de datos, LLMs y aplicaciones full stack que automatizan procesos y convierten datos en decisiones.',
+        'hero.eyebrow': 'Ingeniero de Confiabilidad · Oil &amp; Gas + IA aplicada',
+        'hero.desc': 'Ingeniero de Confiabilidad en Campo Rubiales (Ecopetrol) que construye software real: dashboards, automatización e Inteligencia Artificial aplicados a mi propia operación de campo.',
         'hero.btnProjects': 'Ver proyectos', 'hero.btnContact': 'Contactar',
         'about.title': 'SOBRE MÍ',
         'about.p1': 'Soy Franyer López, Ingeniero de Confiabilidad en el sector oil & gas (Campo Rubiales, Ecopetrol) con formación en Ingeniería de Sistemas e <strong>Inteligencia Artificial</strong>. Combino experiencia real de campo — inspecciones ambientales, cumplimiento normativo — con desarrollo de software: construyo pipelines de datos, dashboards y LLMs integrados en producción que resuelven problemas reales de mi propia operación.',
@@ -241,8 +241,8 @@ var TRANSLATIONS = {
     },
     en: {
         'nav.home': 'Home', 'nav.about': 'About', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
-        'hero.eyebrow': 'Systems Engineer · AI Specialist',
-        'hero.desc': 'I merge systems engineering and artificial intelligence to take solutions from idea to production: data pipelines, LLMs and full-stack applications that automate processes and turn data into decisions.',
+        'hero.eyebrow': 'Reliability Engineer · Oil &amp; Gas + Applied AI',
+        'hero.desc': 'Reliability Engineer at Campo Rubiales (Ecopetrol) who builds real software: dashboards, automation, and Artificial Intelligence applied to my own field operation.',
         'hero.btnProjects': 'View projects', 'hero.btnContact': 'Contact me',
         'about.title': 'ABOUT ME',
         'about.p1': 'I\'m Franyer López, a Reliability Engineer in the oil & gas sector (Campo Rubiales, Ecopetrol) with a background in Systems Engineering and <strong>Artificial Intelligence</strong>. I combine real field experience — environmental inspections, regulatory compliance — with software development: I build data pipelines, dashboards, and production-grade LLM integrations that solve real problems in my own operation.',
