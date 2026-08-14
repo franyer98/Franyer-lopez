@@ -203,7 +203,7 @@ function loadGithubActivity(lang) {
 var TRANSLATIONS = {
     es: {
         'nav.home': 'Inicio', 'nav.about': 'Sobre mí', 'nav.experience': 'Experiencia', 'nav.skills': 'Habilidades', 'nav.projects': 'Proyectos', 'nav.contact': 'Contacto',
-        'hero.eyebrow': 'Ingeniero de Sistemas · Ingeniero de Confiabilidad (Oil & Gas) · IA aplicada',
+        'hero.eyebrow': 'Ingeniero de Confiabilidad · Oil & Gas + IA aplicada',
         'hero.desc': 'Ingeniero de Confiabilidad en Campo Rubiales (Ecopetrol) que construye software real: dashboards, automatización e Inteligencia Artificial aplicados a mi propia operación de campo.',
         'hero.btnProjects': 'Ver proyectos', 'hero.btnContact': 'Contactar',
         'about.title': 'SOBRE MÍ',
@@ -241,7 +241,7 @@ var TRANSLATIONS = {
     },
     en: {
         'nav.home': 'Home', 'nav.about': 'About', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
-        'hero.eyebrow': 'Systems Engineer · Reliability Engineer (Oil & Gas) · Applied AI',
+        'hero.eyebrow': 'Reliability Engineer · Oil & Gas + Applied AI',
         'hero.desc': 'Reliability Engineer at Campo Rubiales (Ecopetrol) who builds real software: dashboards, automation, and Artificial Intelligence applied to my own field operation.',
         'hero.btnProjects': 'View projects', 'hero.btnContact': 'Contact me',
         'about.title': 'ABOUT ME',
