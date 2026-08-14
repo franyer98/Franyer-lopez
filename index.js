@@ -205,7 +205,7 @@ var TRANSLATIONS = {
         'nav.home': 'Inicio', 'nav.about': 'Sobre mí', 'nav.experience': 'Experiencia', 'nav.skills': 'Habilidades', 'nav.projects': 'Proyectos', 'nav.contact': 'Contacto',
         'hero.eyebrow': 'Ingeniero de Confiabilidad · Oil & Gas + IA aplicada',
         'hero.desc': 'Ingeniero de Confiabilidad en Campo Rubiales (Ecopetrol) que construye software real: dashboards, automatización e Inteligencia Artificial aplicados a mi propia operación de campo.',
-        'hero.btnProjects': 'Ver proyectos', 'hero.btnContact': 'Contactar',
+        'hero.btnProjects': 'Ver proyectos', 'hero.btnCV': 'Descargar CV', 'hero.btnContact': 'Contactar',
         'about.title': 'SOBRE MÍ',
         'about.p1': 'Soy Franyer López, Ingeniero de Confiabilidad en el sector oil & gas (Campo Rubiales, Ecopetrol) con formación en Ingeniería de Sistemas e <strong>Inteligencia Artificial</strong>. Combino experiencia real de campo — inspecciones ambientales, cumplimiento normativo — con desarrollo de software: construyo pipelines de datos, dashboards y LLMs integrados en producción que resuelven problemas reales de mi propia operación.',
         'about.p2': 'Autodidacta y resolutivo, trabajo con prácticas de ingeniería moderna: control de versiones con Git, CI/CD con GitHub Actions, testing automatizado y despliegue en la nube. Mi filosofía: arquitecturas simples, código mantenible y soluciones que atacan el problema de raíz.',
@@ -243,7 +243,7 @@ var TRANSLATIONS = {
         'nav.home': 'Home', 'nav.about': 'About', 'nav.experience': 'Experience', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
         'hero.eyebrow': 'Reliability Engineer · Oil & Gas + Applied AI',
         'hero.desc': 'Reliability Engineer at Campo Rubiales (Ecopetrol) who builds real software: dashboards, automation, and Artificial Intelligence applied to my own field operation.',
-        'hero.btnProjects': 'View projects', 'hero.btnContact': 'Contact me',
+        'hero.btnProjects': 'View projects', 'hero.btnCV': 'Download CV', 'hero.btnContact': 'Contact me',
         'about.title': 'ABOUT ME',
         'about.p1': 'I\'m Franyer López, a Reliability Engineer in the oil & gas sector (Campo Rubiales, Ecopetrol) with a background in Systems Engineering and <strong>Artificial Intelligence</strong>. I combine real field experience — environmental inspections, regulatory compliance — with software development: I build data pipelines, dashboards, and production-grade LLM integrations that solve real problems in my own operation.',
         'about.p2': 'Self-taught and results-driven, I work with modern engineering practices: version control with Git, CI/CD with GitHub Actions, automated testing and cloud deployment. My philosophy: simple architectures, maintainable code, and solutions that tackle the root of the problem.',
@@ -322,6 +322,11 @@ function applyLanguage(lang) {
 
     var toggleBtn = document.getElementById('lang-toggle');
     if (toggleBtn) toggleBtn.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
+
+    var cvLink = document.getElementById('cv-download');
+    if (cvLink) {
+        cvLink.setAttribute('href', lang === 'en' ? './cv/CV_Franyer_Lopez_EN.pdf' : './cv/CV_Franyer_Lopez_ES.pdf');
+    }
 
     initTypewriters(lang);
 
