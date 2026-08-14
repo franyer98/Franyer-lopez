@@ -255,7 +255,7 @@ var TRANSLATIONS = {
         'experience.item1': 'I run fugitive emissions detection inspections with an OGI thermographic camera (FLIR) across 200+ clusters and the CPF-1 and CPF-2 areas, producing daily environmental compliance reports.',
         'experience.item2': 'I identify and track gas leaks, directly contributing to reducing emissions from the facilities.',
         'experience.item3': 'I designed and built an interactive dashboard for tracking per-cluster OGI inspections, digitizing a process that previously relied on manual field logging.',
-        'experience.item4': 'I built an emissions reporting system with 3D visualization and KPIs, integrated with Ecopetrol\\'s official GOP-F-006 format, improving field data traceability.',
+        'experience.item4': 'I built an emissions reporting system with 3D visualization and KPIs, integrated with Ecopetrol\'s official GOP-F-006 format, improving field data traceability.',
         'skills.title': 'SKILLS',
         'skills.group1': 'AI & Data', 'skills.group2': 'Automation & Backend',
         'skills.group3': 'Tools & Infrastructure', 'skills.group4': 'Web Development',
